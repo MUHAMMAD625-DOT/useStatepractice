@@ -20,18 +20,23 @@ function ComponentB() {
   console.log(name);
 
   return (
-    <>
-      <div className=" gap-4 mt-4">
-        <p  className="text-xl font-bold text-gray-700">{name.name}</p>
+    <div className="flex flex-col items-center justify-center mt-20 gap-5">
+      <div className=" flex items-center gap-4 mt-4">
+        <p className="text-xl font-bold text-gray-700">{name.name}</p>
         <p className="text-xl font-bold  text-gray-700">{name.age}</p>
         <p className="text-xl font-bold  text-gray-700">{name.address}</p>
         <p className="text-xl font-bold text-gray-700 ">{name.class}</p>
         <p className="text-xl font-bold text-gray-700 ">{name.college}</p>
       </div>
       <div>
-      <button  className="text-xl font-bold  border rounded-md bg-slate-50 p-1 " onClick={changeName}>change</button>
+        <button
+          className="text-xl font-bold  border rounded-md bg-slate-50 p-1 "
+          onClick={changeName}
+        >
+          change
+        </button>
       </div>
-    </>
+    </div>
   );
 }
 
